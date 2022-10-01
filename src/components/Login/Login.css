@@ -1,0 +1,86 @@
+
+.setup_name{
+    height: 400px;
+    width: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: leftToRight 1.5s ease;
+
+}
+.setup_name > img{
+    width: 500px;
+    height: auto;
+    margin-bottom: 50px;
+}
+.setup_name > div > input {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    box-shadow: 0px 1px 2px 3px rgba(3, 3, 3, 0.1);
+    height: 40px;
+    width: 300px;
+}
+.setup_name > div > button {
+    background-color: var(--color-red);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 200px;
+    transition: .4s linear;
+}
+.setup_name > div > button:hover{
+    box-shadow: 0px 0px 2px 2px rgba(3, 3, 3, 0.5);
+    cursor: pointer;
+}
+.setup_name h1 {
+    color: var(--color-red);
+}
+.setup_name p {
+    color: var(--color-font);
+    margin-bottom: 10px;
+}
+
+.footer_login{
+    height: 120px;
+    border-bottom: 50px solid var(--color-gray);
+    width: 100vw;
+    position: fixed;
+    background-color: var(--color-red);
+    bottom: 0px;
+}
+.ball_ext{
+    height: 80px;
+    width: 80px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: var(--color-first);
+    position: fixed;
+    bottom: 10px;
+    left: calc((100vw - 80px)/2);
+}
+.ball_int{
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-gray);
+    border-radius: 50%;
+    border: 10px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@keyframes leftToRight {
+    0%{
+        transform: translateY(-200%);
+    }
+    50%{
+        transform: translateY(20%);
+    }
+    75%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

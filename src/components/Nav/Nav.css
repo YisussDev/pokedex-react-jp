@@ -1,0 +1,35 @@
+.Nav{
+    height: 100px;
+    width: 100vw;
+    border-bottom: 40px solid var(--color-gray);
+    background-color: var(--color-red);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    z-index: 10000;
+}
+.logo_nav {
+    width: auto;
+    height: 50px;
+    margin-top: 12.5px;
+}
+.balltop_ext{
+    height: 80px;
+    width: 80px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: var(--color-first);
+    margin-top: 40px;
+}
+.balltop_int{
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-gray);
+    border-radius: 50%;
+    border: 10px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+}

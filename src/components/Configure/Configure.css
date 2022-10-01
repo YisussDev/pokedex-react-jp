@@ -1,0 +1,73 @@
+.configure_container{
+    border-radius: 10px;
+    background-color: var(--color-red);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+    z-index: 1000000;
+}
+.control_configure{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-font);
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    transition: .2s linear;
+}
+.control_configure:hover{
+    background-color: var(--color-font);
+    color: var(--color-first);
+    cursor: pointer;
+}
+.control_configure > svg{
+    font-size: 2rem;
+    pointer-events: none;
+}
+.control_theme{
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-first);
+    border-radius: 50%;
+    color: var(--color-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control_theme:hover {
+    cursor: pointer;
+}
+.configure_container > h2 {
+    text-transform: capitalize;
+    color: var(--color-first);
+}
+.configure_container > p {
+    text-align: center;
+}
+.configure_container > img {
+    height: 100px;
+    width: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    padding: 10px;
+}
+.container > img {
+    height: 100px;
+}

@@ -1,0 +1,53 @@
+.pokemonList {
+    height: 100%;
+    width: 100%;
+    padding: 0px 200px;
+    padding-top: 100px;
+}
+.pokemonList > h4 {
+    margin-top: 20px;
+    color: var(--color-font);
+}
+.pokemonList > h4 > strong {
+    color: var(--color-red);
+    text-transform: capitalize;
+}
+.pokemonList > section {
+    min-height: 450px;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.pokemonList > button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    background-color: var(--color-red);
+    color: var(--color-first);
+}
+.backButton{
+    top: calc((100% - 50px)/2);
+    left: 20px;
+}
+.nextButton{
+    top: calc((100% - 50px)/2);
+    right: 20px;
+}
+.pokemonList > button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.pokemonList > button:disabled{
+    background-color: rgb(136, 136, 136);
+}
+.pokemonList > button > svg {
+    pointer-events: none;
+}
